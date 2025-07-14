@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HorrorBrutal</title>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Adicionar imagem de fundo para o body */
+        body {
+            background-image: url('img/Gemini_Generated_Image_t2xx8nt2xx8nt2xx.png');
+            background-size: cover; /* Garante que a imagem cubra toda a tela */
+            background-position: center center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Impede que a imagem se repita */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título e frase com cores personalizadas -->
+    <h1 class="text-center mt-5" style="color: rgb(117, 4, 4); font-family: 'Roboto' sans-serif;">Horror Brutal</h1>
+    <p class="text-center mt-2" style="color: white;">Seu streaming de filmes de terror</p>
+
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card" style="width: 100%; max-width: 400px;">
+            <div class="card-body">
+                <h4 class="card-title text-center mb-4" style="color: black;">Login</h3>
+
+                <form id="login-form">
+                    <div class="mb-3">
+                        <label for="email" class="form-label" style="color: black">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label" style="color: black">Senha</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-danger">Entrar</button>
+                    </div>
+                </form>
+                <div class="mt-3 text-center">
+                    <a href="#" id="register-link">Não tem uma conta? Registre-se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--link para inicializar o banco de dados-->
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+    
+        <!--link para plug in pounch DB-->
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.find.min.js"></script>
+
+    <!-- Link para o JavaScript -->
+    <script src="login.js"></script>
+
+    <!-- Link para o Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
